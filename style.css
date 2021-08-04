@@ -1,11 +1,18 @@
 .navbar {
     background-color: black;
     color: white;
-    justify-content:center
+    height: 60px;
+    
 }
+
+
 .nav {
     color: white;
     text-decoration: none;
+    padding-top:10px;
+    font-size:15px;
+    text-transform: uppercase;
+    font-family: Lato;
 }
 
 .nav:hover {
@@ -14,41 +21,51 @@
 
 .navbar>.opcionesUl {
     display: flex;
-    justify-content: center;
+  /*  justify-content: center;
+    */
 }
 .opciones {
-    padding-top: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     list-style: none;
     margin: 0 .75rem;
 }
 
+#home
+{
+    justify-content:right;
+}
 
+.home2
+{
+    word-wrap: break-word;
+}
 
-.hoverable{
-    display:inline-block;
-    backface-visibility: hidden;
-    vertical-align: middle;
-    position:relative;
-    box-shadow: 0 0 1px rgba(0,0,0,0);
-    transform: translateZ(0);
-    transition-duration: .3s;
-    transition-property:transform;
-}  
-.hoverable:before{
-    position:absolute;
-    pointer-events: none;
-    z-index:-1;
-    content: '';
-    top: 100%;
-    left: 5%;
-    height:10px;
-    width:90%;
-    opacity:0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-    /* W3C */
-    transition-duration: 0.3s;
-    transition-property: transform, opacity;
+.imgPrincipal
+{
+    background-color:rgb(31,120,142);
+    width:50%;
+}
+.imgP{
+
+    padding-top:38px;
+    width:85%
+}
+
+.me
+{
+    text-transform: uppercase;
+    font-family: Lato;
+}
+.me2
+{
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 30px;
+    background-color:rgb(10, 44, 84);
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    padding: 10px;
+    width:85%;
+   
 }
