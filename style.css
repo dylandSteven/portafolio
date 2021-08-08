@@ -1,16 +1,15 @@
 .navbar {
     background-color: black;
     color: white;
-    height: 60px;
+    height: 50px;
     
 }
-
 
 .nav {
     color: white;
     text-decoration: none;
-    padding-top:10px;
-    font-size:15px;
+    padding-top:6px;
+    font-size:14px;
     text-transform: uppercase;
     font-family: Lato;
 }
@@ -24,11 +23,18 @@
   /*  justify-content: center;
     */
 }
+
 .opciones {
     padding-left: 40px;
     padding-right: 40px;
     list-style: none;
     margin: 0 .75rem;
+}
+
+.home 
+{
+    height:94vh;
+    background-color:rgb(31, 120, 142);
 }
 
 #home
@@ -43,9 +49,10 @@
 
 .imgPrincipal
 {
-    background-color:rgb(31,120,142);
+    
     width:50%;
 }
+
 .imgP{
 
     padding-top:38px;
@@ -57,6 +64,7 @@
     text-transform: uppercase;
     font-family: Lato;
 }
+
 .me2
 {
     text-transform: uppercase;
@@ -68,4 +76,176 @@
     padding: 10px;
     width:85%;
    
+}
+/*ABOUT DIV*/
+
+.aboutDiv
+{
+    background-color:rgb(6, 54, 78);
+    height: 100vh;
+ 
+}
+
+.mephoto
+{
+    height: 550px;
+ /*   filter: grayscale(100%);
+*/}
+
+.posPhtoto
+{
+}
+
+.padre {
+    background: yellow;
+    height: 1500px;
+    /*IMPORTANTE
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    */
+
+
+}
+
+.prue
+{
+   background-color:palevioletred
+}
+.hijo {
+
+  
+    width: 50px;
+    height: 50px;
+    background-color:rgb(0, 94, 63);
+
+}
+
+.contenedor {
+      
+    height:500px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hijo1 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(98, 45, 45);
+   
+}
+
+.photo{
+    /* 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    */
+    position: absolute;
+    display: block;
+  }
+  
+  .photo img{
+   
+    object-fit: cover;
+    filter: grayscale(100%) contrast(100%);
+    box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: -10px;
+    /* 
+    display: block;
+  */
+}
+  
+  .photo:hover img{
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+  }
+  
+  .photo .glow-wrap{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: -10px;
+    top: 0;
+    /*   
+    */
+  }
+  
+  .photo .glow{
+      top: 0;
+      position:absolute;
+      /*   
+      display: block;
+   */
+    width: 40%;
+    height: 200%;
+    background: rgba(255,255,255,.2);
+    filter: blur(5px);
+    transform: rotate(45deg) translate(-450%, 0);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .photo:hover .glow{
+    transform: rotate(45deg) translate(450%, 0);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .photo:hover img,
+  .photo:hover .glow-wrap{
+      margin-top: 0;
+  /* 
+  */
+}
+
+.textAboutMe
+{
+    color: white;
+ 
+}
+
+
+
+
+
+.skillsetDiv
+{
+    height: 100vh;
+    background-color: rgb(31,120,142);
+}           
+.imgSkill
+{
+    height: 230px;
+    width: 230px;
+    min-height: 100px;
+    margin:50px;
+}
+
+.image-shadow:after {
+
+    opacity: 0.9;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; 
+    background-size: cover;
+    z-index: -1;
+    transition: filter .3s ease;
+}
+
+.image-shadow {
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+
+    background-size: cover;
+}
+
+.js-tilt-container {
+    transition: transform .1s ease;
+    transform: rotateX(0) rotateY(0);
+    transform-style: preserve-3d;
 }
