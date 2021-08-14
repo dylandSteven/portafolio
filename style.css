@@ -1,5 +1,5 @@
 .navbar {
-    background-color: black;
+    background-color: #212529;
     color: white;
     height: 50px;
     
@@ -34,7 +34,7 @@
 .home 
 {
     height:94vh;
-    background-color:rgb(31, 120, 142);
+    background-color:rgb(12,135,239);
 }
 
 #home
@@ -70,7 +70,7 @@
     text-transform: uppercase;
     font-family: Lato;
     font-size: 30px;
-    background-color:rgb(10, 44, 84);
+    background-color:#212529;
     color:rgb(255, 255, 255);
     display: inline-block;
     padding: 10px;
@@ -212,12 +212,12 @@
 .skillsetDiv
 {
     height: 100vh;
-    background-color: rgb(31,120,142);
+    background-color:#212529;
 }           
 .imgSkill
 {
-    height: 230px;
-    width: 230px;
+    height: 190px;
+    width: 190px;
     min-height: 100px;
     margin:50px;
 }
@@ -226,7 +226,6 @@
 
     opacity: 0.9;
     content: '';
-    position: absolute;
     width: 100%;
     height: 100%;
     background-image: inherit; 
@@ -236,11 +235,9 @@
 }
 
 .image-shadow {
-    margin: 20px auto;
-    width: 400px;
-    height: 400px;
+    width: 190px;
+    height: 190px;
     border-radius: 10px;
-
     background-size: cover;
 }
 
@@ -248,4 +245,108 @@
     transition: transform .1s ease;
     transform: rotateX(0) rotateY(0);
     transform-style: preserve-3d;
+}
+
+.img-res{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.site-section-work
+{
+    padding-top: 120px;
+
+    padding-bottom: 120px;
+    background-color: cadetblue;
+}
+
+.site-section-work .col-md-4:nth-last-child(-n+3) .portfolio-item {
+    margin-bottom: 0;
+}
+
+.site-section-work .btn {
+    margin-top: 10px;
+}
+
+.work-item
+{
+    height: 280px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.work-item:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out;
+    -ms-transition: background-color 0.25s ease-in-out;
+}
+
+.work-item:hover:before{
+    background-color: rgba(33,33,33,0.6);
+}
+
+.work-item:hover .workItemInfo {
+    left: 50px;
+    opacity: 1;
+}
+
+.workItemInfo {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out;
+    -ms-transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out;
+}
+
+.portfolio-item:hover .workItemInfo {
+    left: 50px;
+    opacity: 1;
+}
+
+.workItemInfo h4 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.workItemInfo a {
+    color: rgb(0, 0, 0);
+    padding: 6px 7px 4px;
+    font-size: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+.workItemInfo a:hover {
+    color: #000000;
+    background-color: rgb(0, 0, 0);
+}
+.fa
+{
+    color:white;
 }

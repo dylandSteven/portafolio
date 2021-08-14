@@ -1,4 +1,5 @@
 
+
 var el = $('.js-tilt-container');
 
 el.on('mousemove', function(e){
@@ -10,7 +11,8 @@ el.on('mousemove', function(e){
 	
 
 	$(this).css('transform','perspective(500px) rotateX('+ (cursFromCenterY / 40) +'deg) rotateY('+ -(cursFromCenterX / 40) +'deg) translateZ(10px)');
-  
+    
+    console.log("2")
   const invertedX = Math.sign(cursFromCenterX) > 0 ? -Math.abs( cursFromCenterX ) : Math.abs( cursFromCenterX );
   
   //Parallax transform on image
@@ -21,4 +23,8 @@ el.on('mousemove', function(e){
 
 el.on('mouseleave', function(){
 	$(this).addClass('leave');
+    
+    console.log("3")
 });
+
+
