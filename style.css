@@ -18,8 +18,8 @@ html {
 
 .navbar-2 {
   /*
-    */
   background-color: #006699;
+  */
 }
 
 .navbar-3 {
@@ -268,20 +268,26 @@ html {
 
 
 .work {
-    background-color: #cccccc;
-    display: flex;
+ /*   display: flex;
     align-items: center;
-    
+   */
+   
+   position: absolute;
+    top: 108%; 
+    padding-right: 7%;
+    padding-left: 12%;    
     /*
     background-color: #B3b3d7;
-    */
     padding-top: 5em;
     padding-bottom: 10em
+    */
 }
 
 .work-item {
-  height: 280px;
+  height: 270px;
+  width:350px;
   margin-bottom: 30px;
+  padding: 0px 0px 0px 0px ;
   position: relative;
 }
 
@@ -427,14 +433,3 @@ input:-webkit-autofill:active {
   color: #000000;
 }
 
-#particles-js
-{
-  height: 100vh;
-}
-
-.background {
-top: 0;
-position: absolute;
-z-index:9999;
-}
-  
