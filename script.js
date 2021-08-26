@@ -1,13 +1,22 @@
 var el = $(".js-tilt-container");
 var navbar = $(".navbar");
+var textNav=$(".nav");
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 700) {
+  if (   $(window).scrollTop() > 700 ) {
     navbar.removeClass("navbar-3");
     navbar.addClass("navbar-2");
-  } else {
+    textNav.addClass("nav-2")
+    textNav.removeClass("nav-3")
+    console.log("1")
+
+  }
+ 
+   else {
     navbar.removeClass("navbar-2");
     navbar.addClass("navbar-3");
+    textNav.addClass("nav-3")
+    textNav.removeClass("nav-2")
   }
 });
 
