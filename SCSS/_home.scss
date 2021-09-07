@@ -1,196 +1,300 @@
+:root {
+  --header-height: 4rem;
+  --fuenteMe: 5.9rem;
+  --fuenteMe2: 3rem;
 
+  @media screen and(min-width:1100px)  and (max-width: 1300px){
+    --fuenteMe2: 2.5rem;
+    --fuenteMe: 5rem;
+    .navbar {
+      background-color: #ff4c16;
+    }
+    .home {
+      padding-top: --header-height;
+      height: 80vh;
+    }
+  }
+  
+  @media screen and(min-width:950px)  and (max-width: 1100px){
+    --fuenteMe2: 2.5rem;
+    --fuenteMe: 5rem;
+    .navbar {
+      background-color: #ffc916;
+    }
+    .home {
+      padding-top: --header-height;
+      height: 68vh;
+    }
+  }
+  @media screen and(min-width:790px ) and (max-width: 950px) {
+    .home {
 
+    
+      height: 60vh;
 
+    }
+    .navbar {
+      background-color: #16ff31;
+    }
+    --header-height:9rem
+    --fuenteMe: 6rem;
+    --fuenteMe2: 2.5rem;
+  }
 
+  
+  @media screen and(min-width:600px) and(max-width:790px) {
+    --fuenteMe2: 1.8rem;
+    --fuenteMe: 3rem;
+    .home {
+      height: 50vh;
+    }
+    .navbar {
+      background-color: #ff16cd;
+    }
+    .me {
+      padding-top: 6rem;
+    }
+  }
+  
+  @media screen and(min-width:500px) and(max-width:600px) {
+    --fuenteMe2: 1.5rem;
+    --fuenteMe: 3rem;
+    .home {
+      height:38vh;
+    }
+    .navbar {
+      background-color: #167fff;
+    }
+    .me {
+      padding-top: 6rem;
+    }
+  }
+  
+  @media screen and(min-width:400px) and(max-width:500px) {
+    --fuenteMe2: 1.2rem;
+    --fuenteMe: 2rem;
+    .navbar {
+      background-color: #7cd319;}
+      .home {
+        height:33vh;
+      }
+    
+    .me {
+      padding-top: 3rem;
+    }
+  }
+  @media screen and(min-width:300px) and(max-width:400px) {
+    --fuenteMe2: 1rem;
+    --fuenteMe: 1.5rem;
+    .home {
+      height:27vh;
+    }
+    .navbar {
+      background-color: #d37919;
+
+    }
+    .me {
+      padding-top: 3rem;
+    }
+  }
+  
+}
 
 html {
-    font-family: Helvetica;
-  }
-  
-  .navbar {
-    background-color: #212529;
-    height: 40px;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-  }
-  
-  .navbar-2 {
-    background-color: #000e14;
-  }
-  
-  .navbar-3 {
-    background-color: #212529;
-  }
-  
-  .nav {
-    color: white;
-    text-decoration: none;
-    padding-top: 0.2em;
-    font-size: 1.4rem;
-    text-transform: uppercase;  
-    &:hover
-    {
-      font-size: 1.3rem;
-      color:rgb(97, 255, 19);
-    }
-  }
-  
-  
-  
-  .nav-2 {/*
-    color: rgb(97, 255, 19);
-  */
-  }
-  .nav-3 {
-    color: rgb(255, 255, 255);
-  }
-  
-  
-  
-  .navbar > .opcionesUl {
-    display: flex;
-  }
-  
-  .opciones {
-    padding-left: 40px;
-    padding-right: 40px;
-    list-style: none;
-    margin: 0 0.75rem;
-  }
-  
-  .home {
-    height: 100%;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 6s ease infinite;
-    box-sizing: border-box;
-    max-width: 100%;
-  
-  }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  #home {
-    justify-content: right;
-  }
-  
-  .imgPrincipal {
-    width: 50%;
-  }
-  
-  .imgP {
-    padding-top: 5em;
-    width: 95%;
-    height: auto;
-  
-  }
-  
+  font-family: Helvetica;
+}
+
+.home {
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: #212529;
+  height: 40px;
+  position: fixed;
+  max-width: 100%;
+  z-index: 9999;
+}
+
+.navbar-2 {
+  background-color: #000e14;
+}
+
+.navbar-3 {
+  background-color: #212529;
+}
+
+.textitoH {
+  text-transform: uppercase;
   .me {
-    text-transform: uppercase;
     color: white;
+    font-size: var(--fuenteMe);
+
   }
-  
   .me2 {
-    text-transform: uppercase;
-    font-size: 3rem;
+    font-size: var(--fuenteMe2);
     background-color: #212529;
     color: rgb(255, 255, 255);
     display: inline-block;
     padding: 0.5em;
     width: 80%;
   }
-  /*ABOUT DIV*/
+}
+
+/*
+  &:hover {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(97, 255, 19);
+  }
+}
+/*
+.nav-2 {
+  /*
+    color: rgb(97, 255, 19);
+
+}*/
+
+.nav-3 {
+  color: rgb(255, 255, 255);
+}
+
+.navbar > .opcionesUl {
+  display: flex;
+}
+
+.opcionesUl {
+  padding-right: 2.5rem;
   
-  .aboutDiv {
-    background-color: rgb(6, 54, 78);
-    height: 100vh;
-  }
-  
-  .mephoto {
-    height: 550px;
-  }
-  
-  .padre {
-    background: yellow;
-    height: 1500px;
-  }
-  .hijo {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(0, 94, 63);
-  }
-  
-  .contenedor {
-    height: 500px;
-    background-color: aqua;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .hijo1 {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(98, 45, 45);
-  }
-  
-  .photo {
-    position: absolute;
+  .opciones {
+    list-style: none;
+    margin: 0 0.75rem;
+    position: relative;
     display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .nav {
+      
+      color: white;
+      text-decoration: none;
+      padding-top: 0.2em;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 1;
+        width: 55%;
+        height: 2px;
+        background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s ease-in-out;
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        }
+      &:hover:before
+      {
+        transform-origin: left;
+        transform: scaleX(1);
+        transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+        
+      }
+
+
+    }
   }
-  
-  .photo img {
-    object-fit: cover;
-    filter: grayscale(100%) contrast(100%);
-    box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
-    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-    margin-top: -10px;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .photo:hover img {
-    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .photo .glow-wrap {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    margin-top: -10px;
-    top: 0;
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .photo .glow {
-    top: 0;
-    position: absolute;
-    width: 40%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.2);
-    filter: blur(5px);
-    transform: rotate(45deg) translate(-450%, 0);
-    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  
-  .photo:hover .glow {
-    transform: rotate(45deg) translate(450%, 0);
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  
-  .photo:hover img,
-  .photo:hover .glow-wrap {
-    margin-top: 0;
-  }
-  
-  .textAboutMe {
-    color: white;
-  }
+}
+
+.imgPrincipal {
+  width: 50%;
+}
+
+.imgP {
+  padding-top: 5em;
+  width: 90%;
+  height: auto;
+}
+
+/*ABOUT DIV*/
+
+.aboutDiv {
+  background-color: rgb(6, 54, 78);
+  height: 100vh;
+}
+
+.mephoto {
+  height: 550px;
+}
+.photo {
+  position: absolute;
+  display: block;
+}
+
+.photo img {
+  object-fit: cover;
+  filter: grayscale(100%) contrast(100%);
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.photo:hover img {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.photo .glow-wrap {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: -10px;
+  top: 0;
+}
+
+.photo .glow {
+  top: 0;
+  position: absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow {
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap {
+  margin-top: 0;
+}
+
+.textAboutMe {
+  color: white;
+}

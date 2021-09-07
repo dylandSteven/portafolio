@@ -2,6 +2,10 @@ var el = $(".js-tilt-container");
 var navbar = $(".navbar");
 var textNav=$(".nav");
 
+
+
+
+
 $(window).scroll(function () {
   if (   $(window).scrollTop() > 700 ) {
     navbar.removeClass("navbar-3");
