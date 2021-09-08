@@ -2,7 +2,7 @@
   --header-height: 4rem;
   --fuenteMe: 5.9rem;
   --fuenteMe2: 3rem; }
-  @media screen and (min-width: 1100px) and (max-width: 1300px) {
+  @media screen and (min-width: 1101px) and (max-width: 1300px) {
     :root {
       --fuenteMe2: 4rem;
       --fuenteMe: 8.3rem; }
@@ -325,56 +325,189 @@ html {
 
 :root {
   --workTop: 300%;
-  --particlesHeight:120%;
-  --imgHeight:90%; }
+  --particlesHeight: 120%;
+  --imgHeight: 90%; }
+  @media screen and (min-width: 1001px) and (max-width: 1300px) {
+    :root {
+      --workTop: 105%;
+      --particlesHeight: 95%;
+      --imgHeight: 100%; }
+      :root .work-item {
+        padding-bottom: 0%; } }
+  @media screen and (min-width: 901px) and (max-width: 1001px) {
+    :root {
+      --workTop: 110%;
+      --particlesHeight: 145%;
+      --imgHeight: 300%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem; }
+      :root .work-item {
+        margin: 5%;
+        padding: 0%; } }
+  @media screen and (min-width: 700px) and (max-width: 900px) {
+    :root {
+      --workTop: 105%;
+      --particlesHeight: 118%;
+      --imgHeight: 300%; }
+      :root .workItemInfo {
+        top: 120px; }
+      :root .work-item {
+        margin: 0%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        grid-gap: 1rem; } }
+  @media screen and (min-width: 768px) and (max-width: 830px) {
+    :root {
+      --workTop: 105%;
+      --particlesHeight: 133%;
+      --imgHeight: 320%; }
+      :root .workItemInfo {
+        top: 120px; }
+      :root .work-item {
+        margin: 0%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        grid-gap: 1rem; }
+      :root .work {
+        padding-right: 3%;
+        padding-left: 5%; } }
+  @media screen and (min-width: 691px) and (max-width: 767px) {
+    :root {
+      --workTop: 110%;
+      --particlesHeight: 133%;
+      --imgHeight: 100%; }
+      :root .workItemInfo {
+        top: 120px; }
+      :root .work-item {
+        margin: 0%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem; }
+      :root .work {
+        padding-right: 2%;
+        padding-left: 4%; } }
+  @media screen and (min-width: 601px) and (max-width: 695px) {
+    :root {
+      --workTop: 110%;
+      --particlesHeight: 133%;
+      --imgHeight: 95%; }
+      :root .workItemInfo {
+        top: 120px; }
+      :root .work-item {
+        margin: 0%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-gap: 1rem; }
+      :root .work {
+        padding-right: 0%;
+        padding-left: 2%; } }
+  @media screen and (min-width: 501px) and (max-width: 600px) {
+    :root {
+      --particlesHeight:10%; } }
+  @media screen and (min-width: 460px) and (max-width: 600px) {
+    :root {
+      --workTop: 110%;
+      --particlesHeight: 105%;
+      --imgHeight: 100%; }
+      :root .workItemInfo {
+        top: 110px; }
+      :root .work-item {
+        margin: 0%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem; }
+      :root .work {
+        padding-right: 3%;
+        padding-left: 5%; } }
+  @media screen and (min-width: 450px) and (max-width: 461px) {
+    :root {
+      --workTop: 110%;
+      --particlesHeight: 290%;
+      --imgHeight: 100%; }
+      :root .workItemInfo {
+        top: 150px; }
+      :root .work-item {
+        margin: 1%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 0rem;
+        display: inline-block; }
+      :root .work {
+        text-align: center;
+        padding-right: auto;
+        padding-left: auto; } }
+  @media screen and (min-width: 0px) and (max-width: 459px) {
+    :root {
+      --workTop: 103%;
+      --particlesHeight: 240%;
+      --imgHeight: 100%; }
+      :root .workItemInfo {
+        top: 150px; }
+      :root .work-item {
+        margin: 1%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 0rem;
+        display: inline-block; }
+      :root .work {
+        text-align: center;
+        padding-right: auto;
+        padding-left: auto; } }
+  @media screen and (max-width: 400px) {
+    :root {
+      --workTop: 105%;
+      --particlesHeight: 213%;
+      --imgHeight: 100%; }
+      :root .workItemInfo {
+        top: 120px; }
+      :root .work-item {
+        margin: 1%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 0rem;
+        display: inline-block; }
+      :root .work {
+        text-align: center;
+        padding-right: auto;
+        padding-left: auto; } }
+  @media screen and (max-width: 370px) {
+    :root {
+      --workTop: 105%;
+      --particlesHeight: 200%;
+      --imgHeight: 100%; }
+      :root .workItemInfo {
+        top: 120px; }
+      :root .work-item {
+        margin: 1%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 0rem;
+        display: inline-block; }
+      :root .work {
+        text-align: center;
+        padding-right: auto;
+        padding-left: auto; } }
 
-/*@media screen and(min-width:1100px)  and (max-width: 1300px){
-    --workTop:85%;
-    --particlesHeight:90%;
-    
-  }
-  @media screen and(min-width:1000px) and (max-width: 1150px) {
-    --workTop: 83%;
-    --particlesHeight:80%;
-
-  }
-
-  @media screen and(min-width:950px)  and (max-width: 1100px){
-    --workTop:73%;
-    --particlesHeight:80%;
-    --imgHeight:90%;
-
-  }
-  @media screen and(min-width:790px ) and (max-width: 950px) {
-    --particlesHeight:80%;
-    --imgHeight:300%;
-
-    .work
-    {  
-      .work-item {
-    
-      }
-    }
-    .work2
-    {  display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      grid-gap: 1rem;
-    }
-  }
-
-  @media screen and(min-width:320px) and(max-width:790px) {
-    --particlesHeight:60%;
-
-  }
-
-  @media screen and(min-width:500px) and(max-width:600px) {
-  }
-  @media screen and(min-width:400px) and(max-width:500px) {
-    
-  }
-  @media screen and(min-width:300px) and(max-width:400px) {
-  }
-}*/
 .work {
   top: var(--workTop);
   position: absolute;
@@ -406,7 +539,7 @@ html {
   height: auto;
   width: var(--imgHeight);
   margin-bottom: 4em;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 20px 0px;
   position: relative; }
 
 .work-item:before {
