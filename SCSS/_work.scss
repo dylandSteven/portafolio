@@ -28,7 +28,7 @@
     }
   }
 
-  @media screen and(min-width:700px) and (max-width: 900px) {
+  @media screen and(min-width:809px) and (max-width: 900px) {
     --workTop: 105%;
     --particlesHeight: 118%;
     --imgHeight: 300%;
@@ -43,17 +43,16 @@
 
     .work2 {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       grid-gap: 1rem;
     }
   }
 
-
-
-  @media screen and(min-width:768px) and (max-width: 830px) {
-    --workTop: 105%;
+  
+  @media screen and(min-width:767px) and (max-width: 809px) {
+    --workTop: 110%;
     --particlesHeight: 133%;
-    --imgHeight: 320%;
+    --imgHeight: 300px;
     .workItemInfo {
       top: 120px;
     }
@@ -61,49 +60,22 @@
     .work-item {
       margin: 0%;
       padding: 0%;
-    }
-
+    }  
     .work2 {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      grid-gap: 1rem;
+      grid-gap: 1px;
+      grid-template-columns: repeat(2, 1fr);
     }
     .work {
-      padding-right: 3%;
-      padding-left: 5%;
-    }
-  }
-
-
-
-  @media screen and(min-width:749px ) and (max-width: 768px) {
-    --workTop: 105%;
-    --particlesHeight: 133%;
-    --imgHeight: 105%;
-    .workItemInfo {
-      top: 120px;
-    }
-
-    .work-item {
-      margin: 0%;
-      padding: 0%;
-    }
-
-    .work2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
-      grid-gap: 1rem;
-    }
-    .work {
-      padding-right: 3%;
-      padding-left: 1%;
+      padding-right: 0%;
+      padding-left: 2%;
     }   
   }
 
-  @media screen and(min-width:691px) and (max-width: 767px) {
+  @media screen and(min-width:677px) and (max-width: 767px) {
     --workTop: 110%;
     --particlesHeight: 133%;
-    --imgHeight: 100%;
+    --imgHeight: 95%;
     .workItemInfo {
       top: 120px;
     }
@@ -119,10 +91,14 @@
       grid-gap: 1rem;
     }
     .work {
-      padding-right: 2%;
-      padding-left: 4%;
+      padding-right: 0%;
+      padding-left: 2%;
     }
+   
   }
+
+
+  
   @media screen and(min-width:601px) and (max-width: 695px) {
     --workTop: 110%;
     --particlesHeight: 133%;
