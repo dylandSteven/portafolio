@@ -1,5 +1,5 @@
 :root {
-  --workTop: 300%;
+  --workTop: 105%;
   --particlesHeight: 120%;
   --imgHeight: 90%;
 
@@ -11,6 +11,7 @@
       padding-bottom: 0%;
     }
   }
+
   @media screen and(min-width:901px) and (max-width: 1001px) {
     --workTop: 110%;
     --particlesHeight: 145%;
@@ -47,6 +48,8 @@
     }
   }
 
+
+
   @media screen and(min-width:768px) and (max-width: 830px) {
     --workTop: 105%;
     --particlesHeight: 133%;
@@ -73,6 +76,29 @@
 
 
 
+  @media screen and(min-width:749px ) and (max-width: 768px) {
+    --workTop: 105%;
+    --particlesHeight: 133%;
+    --imgHeight: 105%;
+    .workItemInfo {
+      top: 120px;
+    }
+
+    .work-item {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .work2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+      grid-gap: 1rem;
+    }
+    .work {
+      padding-right: 3%;
+      padding-left: 1%;
+    }   
+  }
 
   @media screen and(min-width:691px) and (max-width: 767px) {
     --workTop: 110%;
@@ -119,9 +145,6 @@
       padding-right: 0%;
       padding-left: 2%;
     }
-  }
-  @media screen and(min-width:501px) and(max-width:600px) {
-  --particlesHeight:10%;  
   }
 
   @media screen and(min-width:460px) and (max-width: 600px) {

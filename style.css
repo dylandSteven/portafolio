@@ -81,7 +81,7 @@
           margin: 0 auto; }
       :root .imgP {
         padding-top: 2rem;
-        width: 140%;
+        width: 110%;
         height: auto; }
       :root .navbar {
         background-color: blueviolet; } }
@@ -107,7 +107,7 @@
           margin: 0 auto; }
       :root .imgP {
         padding-top: 2em;
-        width: 160%;
+        width: 150%;
         height: auto; }
       :root .navbar {
         background-color: greenyellow; } }
@@ -324,7 +324,7 @@ html {
   color: white; }
 
 :root {
-  --workTop: 300%;
+  --workTop: 105%;
   --particlesHeight: 120%;
   --imgHeight: 90%; }
   @media screen and (min-width: 1001px) and (max-width: 1300px) {
@@ -377,6 +377,23 @@ html {
       :root .work {
         padding-right: 3%;
         padding-left: 5%; } }
+  @media screen and (min-width: 749px) and (max-width: 768px) {
+    :root {
+      --workTop: 105%;
+      --particlesHeight: 133%;
+      --imgHeight: 105%; }
+      :root .workItemInfo {
+        top: 120px; }
+      :root .work-item {
+        margin: 0%;
+        padding: 0%; }
+      :root .work2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+        grid-gap: 1rem; }
+      :root .work {
+        padding-right: 3%;
+        padding-left: 1%; } }
   @media screen and (min-width: 691px) and (max-width: 767px) {
     :root {
       --workTop: 110%;
@@ -411,9 +428,6 @@ html {
       :root .work {
         padding-right: 0%;
         padding-left: 2%; } }
-  @media screen and (min-width: 501px) and (max-width: 600px) {
-    :root {
-      --particlesHeight:10%; } }
   @media screen and (min-width: 460px) and (max-width: 600px) {
     :root {
       --workTop: 110%;
