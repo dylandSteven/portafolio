@@ -2,8 +2,5 @@
   "dependencies": {
     "node-sass": "^6.0.1",
     "particles.js": "^2.0.0"
-  },
-  "scripts": {
-    "build": ""
   }
 }
