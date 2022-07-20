@@ -1,9 +1,10 @@
 {
   "dependencies": {
     "node-sass": "^6.0.1",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "webpack": "^5.73.0"
   },
   "scripts": {
-    "build":"webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   }
 }
