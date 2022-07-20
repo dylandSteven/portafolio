@@ -4,6 +4,6 @@
     "particles.js": "^2.0.0"
   },
   "scripts": {
-    "build": ""
+    "build": "vercel build"
   }
 }
