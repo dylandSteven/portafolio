@@ -294,18 +294,6 @@ html {
 
 .navbar {
   background-color: #212529;
-  height: 40px;
-  position: fixed;
-  max-width: 100%;
-  z-index: 9999;
-}
-
-.navbar-2 {
-  background-color: #000e14;
-}
-
-.navbar-3 {
-  background-color: #212529;
 }
 
 .textitoH {
@@ -326,81 +314,25 @@ html {
   width: 80%;
 }
 
-/*
-  &:hover {
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-    color: rgb(97, 255, 19);
-  }
-}
-/*
-.nav-2 {
-  /*
-    color: rgb(97, 255, 19);
-
-}*/
-.nav-3 {
-  color: white;
-}
-
-.navbar > .opcionesUl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.opcionesUl {
-  padding-right: 2.5rem;
-}
-
-.opcionesUl .opciones {
-  list-style: none;
-  margin: 0 0.75rem;
-  position: relative;
-  display: block;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.opcionesUl .opciones .nav {
+nav .navbar-brand {
   color: white;
   text-decoration: none;
-  padding-top: 0.2em;
   font-size: 1.4rem;
   text-transform: uppercase;
 }
 
-.opcionesUl .opciones .nav:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 1;
-  width: 55%;
-  height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(#b47dcd), color-stop(#e878a2), to(#eb85ab));
-  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
-  z-index: 1;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  transition: transform 0.5s ease-in-out;
+.navbar ul li {
+  list-style: none;
+  position: relative;
+  display: block;
+  padding-right: 2rem;
 }
 
-.opcionesUl .opciones .nav:hover:before {
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
-          transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 @-webkit-keyframes gradient {
@@ -509,7 +441,7 @@ html {
 }
 
 .work {
-  background-color: red;
+  background-color: #00eeff;
   width: 100%;
 }
 

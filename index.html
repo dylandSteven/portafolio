@@ -8,30 +8,48 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/particles.js/demo/css/style.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
   <link rel="shortcut icon" href="./images/avataaars.svg" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
   <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Dyland Saldaña</title>
 </head>
 
 <body>
-
   <section class="Primera Parte">
-    <nav class="navbar example container-fluid">
-      <ul class="opcionesUl" id="home">
-        <li class="opciones"><a class="nav" href="#">Home</a></li>
-      </ul>
-      <ul class="opcionesUl">
-        <li class="opciones"><a class="nav" href="#home"> About</a></li>
-        <li class="opciones"><a class="nav" href="#particles-js">Works</a></li>
-        <li class="opciones"><a class="nav" href="#skillSet"> Skillset</a></li>
-        <li class="opciones"><a class="nav" href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#skillSet">Skillset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </section>
+
+
 
   <section class="home" id="home">
     <div class=" container-fluid">
@@ -76,12 +94,12 @@
   </div> -->
 
   <section class="work" id="work">
-    <div class="workDiv container" >
+    <div class="workDiv container">
       <div class="pb-5">
         <h1 class="text-center h1Div"">WORKS</h1>
       </div>
       <div class=" row " >
-          <div class="tarjeta col-6 col-sm-4">
+          <div class=" tarjeta col-6 col-sm-4">
           <div class=" work-item">
             <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
             <div class="workItemInfo">
@@ -94,74 +112,74 @@
               </a>
             </div>
           </div>
-          </div>      
-      
-          <div class="tarjeta col-6 col-sm-4">
-            <div class="work-item">
-              <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
-              <div class="workItemInfo">
-                <h4>Veterinaria</h4>
-                <a id="work2" class="eyeWork">
-                  <i class="fa fa-eye"></i>
-                </a>
-                <a><i class="fa fa-link"></i></a>
-              </div>
-            </div>
-          </div>
+      </div>
 
-          <div class="tarjeta col-6 col-sm-4">
-            <div class="work-item">
-              <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
-              <div class="workItemInfo">
-                <h4>Veterinaria</h4>
-                <a id="work3" class="eyeWork">
-                  <i class="fa fa-eye"></i>
-                </a>
-                <a><i class="fa fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        <div class="tarjeta col-6 col-sm-4">
-          <div class="work-item">
-            <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
-            <div class="workItemInfo">
-              <h4>Veterinaria</h4>
-              <a id="work4" class="eyeWork">
-                <i class="fa fa-eye"></i>
-              </a>
-              <a><i class="fa fa-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="tarjeta col-6 col-sm-4">
-          <div class="work-item">
-            <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
-            <div class="workItemInfo">
-              <h4>Veterinaria</h4>
-              <a id="work5" class="eyeWork">
-                <i class="fa fa-eye"></i>
-              </a>
-              <a><i class="fa fa-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!--col-md-4 col-xs-6-->
-        <div class="tarjeta col-6 col-sm-4">
-          <div class="work-item">
-            <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
-            <div class="workItemInfo">
-              <h4>Veterinaria</h4>
-              <a id="work6" class="eyeWork">
-                <i class="fa fa-eye"></i>
-              </a>
-              <a><i class="fa fa-link"></i></a>
-            </div>
+      <div class="tarjeta col-6 col-sm-4">
+        <div class="work-item">
+          <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
+          <div class="workItemInfo">
+            <h4>Veterinaria</h4>
+            <a id="work2" class="eyeWork">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a><i class="fa fa-link"></i></a>
           </div>
         </div>
       </div>
+
+      <div class="tarjeta col-6 col-sm-4">
+        <div class="work-item">
+          <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
+          <div class="workItemInfo">
+            <h4>Veterinaria</h4>
+            <a id="work3" class="eyeWork">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta col-6 col-sm-4">
+        <div class="work-item">
+          <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
+          <div class="workItemInfo">
+            <h4>Veterinaria</h4>
+            <a id="work4" class="eyeWork">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta col-6 col-sm-4">
+        <div class="work-item">
+          <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
+          <div class="workItemInfo">
+            <h4>Veterinaria</h4>
+            <a id="work5" class="eyeWork">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!--col-md-4 col-xs-6-->
+      <div class="tarjeta col-6 col-sm-4">
+        <div class="work-item">
+          <img class="img-res" src="images/workSet/3_veterinary-websites.jpg" alt="">
+          <div class="workItemInfo">
+            <h4>Veterinaria</h4>
+            <a id="work6" class="eyeWork">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a><i class="fa fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -169,9 +187,9 @@
     <div class="container">
       <h1 class="text-center h1Div" style="color:white;">SKILLSET</h1>
       <div>
-        
+
       </div>
-      <div class=" row" >
+      <div class=" row">
         <div class="col-6 col-sm-3">
           <img class="imgSkill image-shadow js-tilt-container" src="images/skillSetimg/file_type_html_icon_130541.png"
             alt="">
@@ -189,23 +207,23 @@
             alt="">
         </div>
 
-     
-          <div class="col-6 col-sm-3">
-            <img class="imgSkill image-shadow js-tilt-container"
-              src="images/skillSetimg/kisspng-the-c-programming-language-computer-icons-comput-programming-5acadc2dec0be9.0824244915232440779669.png"
-              alt="">
-          </div>
-          <div class="col-6 col-sm-3">
-            <img class="imgSkill image-shadow js-tilt-container"
-              src="images/skillSetimg/ruby_plain_logo_icon_146361.png" alt="">
-          </div>
-          <div class="col-6 col-sm-3">
-            <img class="imgSkill image-shadow js-tilt-container" src="images/skillSetimg/python_18894.png" alt="">
-          </div>
-          <div class="col-6 col-sm-3">
-            <img class="imgSkill image-shadow js-tilt-container" src="images/skillSetimg/file_type_sql_icon_130152.png"
-              alt="">
-          </div>
+
+        <div class="col-6 col-sm-3">
+          <img class="imgSkill image-shadow js-tilt-container"
+            src="images/skillSetimg/kisspng-the-c-programming-language-computer-icons-comput-programming-5acadc2dec0be9.0824244915232440779669.png"
+            alt="">
+        </div>
+        <div class="col-6 col-sm-3">
+          <img class="imgSkill image-shadow js-tilt-container" src="images/skillSetimg/ruby_plain_logo_icon_146361.png"
+            alt="">
+        </div>
+        <div class="col-6 col-sm-3">
+          <img class="imgSkill image-shadow js-tilt-container" src="images/skillSetimg/python_18894.png" alt="">
+        </div>
+        <div class="col-6 col-sm-3">
+          <img class="imgSkill image-shadow js-tilt-container" src="images/skillSetimg/file_type_sql_icon_130152.png"
+            alt="">
+        </div>
       </div>
 
     </div>

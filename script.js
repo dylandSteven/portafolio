@@ -3,9 +3,6 @@ var navbar = $(".navbar");
 var textNav=$(".nav");
 
 
-
-
-
 $(window).scroll(function () {
   if (   $(window).scrollTop() > 700 ) {
     navbar.removeClass("navbar-3");
@@ -100,3 +97,5 @@ array.forEach(function (i) {
 });
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+
+
