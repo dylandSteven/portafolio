@@ -1,10 +1,25 @@
 {
   "dependencies": {
+    "@angular/cli": "^14.1.0",
+    "firebase": "^9.9.0",
     "node-sass": "^6.0.1",
-    "particles.js": "^2.0.0",
     "webpack": "^5.73.0"
   },
+  "name": "portafolio",
+  "version": "1.0.0",
+  "main": "script.js",
   "scripts": {
-    "build": ""
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylandSteven/portafolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylandSteven/portafolio/issues"
+  },
+  "homepage": "https://github.com/dylandSteven/portafolio#readme",
+  "description": ""
 }
