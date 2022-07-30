@@ -96,6 +96,3 @@ array.forEach(function (i) {
   };
 });
 
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-
-

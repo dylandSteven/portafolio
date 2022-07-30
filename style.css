@@ -1,5 +1,4 @@
 :root {
-  --header-height: 4rem;
   --fuenteMe: 5.9rem;
   --fuenteMe2: 3rem;
 }
@@ -294,6 +293,16 @@ html {
 
 .navbar {
   background-color: #212529;
+  max-width: 100%;
+  z-index: 9999;
+}
+
+.navbar-2 {
+  background-color: #000e14;
+}
+
+.navbar-3 {
+  background-color: #212529;
 }
 
 .textitoH {
@@ -314,21 +323,48 @@ html {
   width: 80%;
 }
 
-nav .navbar-brand {
+/*
+  &:hover {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(97, 255, 19);
+  }
+}
+/*
+.nav-2 {
+  /*
+    color: rgb(97, 255, 19);
+}*/
+.nav-3 {
+  color: white;
+}
+
+.navbar > .opcionesUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-brand {
   color: white;
   text-decoration: none;
   font-size: 1.4rem;
   text-transform: uppercase;
+  padding-left: 0.5rem;
 }
 
-.navbar ul li {
+.navbar {
+  padding-right: 2.5rem;
+}
+
+.navbar li {
   list-style: none;
   position: relative;
   display: block;
-  padding-right: 2rem;
 }
 
-.navbar ul li a {
+.navbar li a {
   color: white;
   text-decoration: none;
   font-size: 1.4rem;
@@ -661,12 +697,66 @@ input:-webkit-autofill:active {
   padding-top: 7em;
   padding-bottom: 7em;
   background-color: #212529;
-  max-width: 100%;
 }
 
-.imgSkill {
-  margin: 3em;
-  width: 150px;
+.Skillset img {
+  padding-top: 4em;
+  max-width: 55%;
+  height: auto;
+}
+
+.js-tilt-container {
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+  -webkit-transform: rotateX(0) rotateY(0);
+          transform: rotateX(0) rotateY(0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#skillSet > div > div > div {
+  position: relative;
+}
+
+#skillSet span {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-transform: translate(-60px, 10px);
+          transform: translate(-60px, 10px);
+  border-radius: .5rem;
+  left: 50%;
+  opacity: 0;
+  padding: .5rem 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: opacity .3s ease,-webkit-transform .3s ease;
+  transition: opacity .3s ease,-webkit-transform .3s ease;
+  transition: opacity .3s ease,transform .3s ease;
+  transition: opacity .3s ease,transform .3s ease,-webkit-transform .3s ease;
+  width: 100px;
+  z-index: 1;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+  top: -5px;
+}
+
+#skillSet > div > div div:hover span {
+  opacity: 1;
+  -webkit-transform: translate(-55px);
+          transform: translate(-55px);
+}
+
+#skillSet span:after {
+  border: 5px solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.75);
+  content: "";
+  margin-left: -5px;
+  left: 50%;
+  position: absolute;
+  top: 100%;
 }
 
 .contact {

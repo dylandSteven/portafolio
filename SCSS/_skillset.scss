@@ -1,37 +1,57 @@
-
 .Skillset {
-    box-sizing: border-box;
-    padding-top: 7em;
-    padding-bottom: 7em;
-    background-color: #212529;
-    max-width: 100%;
-  }
-  .imgSkill {
-    margin: 3em;
-    width: 150px;
-  }
-  
-//   .image-shadow:after {
-//     opacity: 0.9;
-//     content: "";
-//     width: 100%;
-//     height: 100%;
-//     background-image: inherit;
-//     background-size: cover;
-//     z-index: -1;
-//     transition: filter 0.3s ease;
-//   }
-  
-//   .image-shadow {
-//     height: auto;
-//     width: 70%;
-//     border-radius: 10px;
-//     background-size: cover;
-//   }
-  
-//   .js-tilt-container {
-//     transition: transform 0.1s ease;
-//     transform: rotateX(0) rotateY(0);
-//     transform-style: preserve-3d;
-//   }
-  
+  box-sizing: border-box;
+  padding-top: 7em;
+  padding-bottom: 7em;
+  background-color: #212529;
+
+}
+
+.Skillset img {
+  padding-top: 4em;
+  max-width: 55%;
+  height: auto;
+  // max-width: 100px;
+}
+.js-tilt-container {
+  transition: transform 0.1s ease;
+  transform: rotateX(0) rotateY(0);
+  transform-style: preserve-3d;
+}
+
+#skillSet>div>div>div {
+  position: relative;
+
+}
+
+#skillSet span {
+  background-color: rgba(255, 255, 255, 0.75);
+  transform: translate(-60px,10px);
+  border-radius: .5rem;
+  left: 50%;
+  opacity: 0;
+  padding: .5rem 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  transition: opacity .3s ease,transform .3s ease;
+  width: 100px;
+  z-index: 1;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+  top: -5px;
+}
+
+#skillSet>div>div div:hover span {
+  opacity: 1;
+  transform: translate(-55px)
+}
+#skillSet span:after {
+  border: 5px solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.75);
+  content: "";
+  margin-left: -5px;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+}

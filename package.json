@@ -21,5 +21,9 @@
     "url": "https://github.com/dylandSteven/portafolio/issues"
   },
   "homepage": "https://github.com/dylandSteven/portafolio#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
 }
